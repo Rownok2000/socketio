@@ -8,7 +8,7 @@ import { SocketService } from './socket.service';
 })
 export class AppComponent {
   messageList:  string[] = [];
-
+  utente = localStorage.getItem('username');
   constructor(private socketService: SocketService) {
   }
 
